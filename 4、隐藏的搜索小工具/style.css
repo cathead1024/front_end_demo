@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #795df6;
+  height: 100vh;
+}
+body,.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 4px;
+  justify-content: start;
+  transition: all 0.35s ease-in;
+}
+input{
+  position: relative;
+  width: 0;
+  height: 50px;
+  border: none;
+  outline: none;
+  background: none;
+  transition: width 0.35s ease-in;
+}
+button{
+  position: relative;
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  background-image: url(./svg/search.svg);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+/* 激活 */
+.active{
+  padding-left: 12px;
+  width: 200px;
+}
+.active input{
+  position: relative;
+  width: 150px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>步骤进度条</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <article class="step">
+      <div class="line">
+        <div class= "lineActive"></div>
+      </div>
+      <ul>
+        <li class = "active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ul>
+    </article>
+    <article class="btn">
+      <button onclick = "prev()">上一步</button>
+      <button onclick = "next()" class="activeBtn">下一步</button>
+    </article>
+  </main>
+</body>
+<script src="main.js"></script>
+
+</html>

@@ -1,0 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #efedd6;
+  padding: 24px 0 ;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.box{
+  position: relative;
+  height: 200px;
+  width: 400px;
+  border-radius: 16px;
+  background:#4682b4;
+  margin-top: 24px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 50px;
+  color:white;
+  font-family: '黑体';
+  font-weight: bold;
+  transform: translateX(400%);
+  transition: all 1s ease;
+}
+.box:nth-of-type(even){
+  transform: translateX(-400%);
+}
+.box.show{
+  transform: translateX(0%);
+}
